@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="converter-box">
+    <h2>Currency Converter</h2>
+
+    <div class="row">
+      <label for="amount">Amount</label>
+      <input type="number" id="amount" placeholder="Enter amount">
+    </div>
+
+    <div class="row">
+      <label for="from">From</label>
+      <select id="from">
+        <option value="INR">INR - Rupee</option>
+        <option value="USD">USD - Dollar</option>
+        <option value="JPY">JPY - Yen</option>
+        <option value="KRW">KRW - Won</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label for="to">To</label>
+      <select id="to">
+        <option value="INR">INR - Rupee</option>
+        <option value="USD" selected>USD - Dollar</option>
+        <option value="JPY">JPY - Yen</option>
+        <option value="KRW">KRW - Won</option>
+      </select>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
